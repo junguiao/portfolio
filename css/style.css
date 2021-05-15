@@ -13,34 +13,36 @@ body{
 	background-color: #fff;
 }
 
-.banner{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}	
-
+	
+.navbar-brand{
+	margin: 0;
+}
+.navbar-nav .nav-link:first-child{
+	padding-left: 0;
+}
+.navbar-nav .nav-link{
+	font-size: 20px;
+}
 header{
-	padding-top: 20px;
+
 }
 
 .navbar-toggler{
-	background-color: inherit;
+	background: #fff;
 }
 
 .logo{
 	display: inline-flex;
 	margin-top: 30px;
 }
-/*.fix{
+.fix{
 	position: fixed;
     top: 0;
     right: 0;
     left: 0;
+	z-index: 100;
 }
-*/
-.header-banner{
-	background:#343a40;
-}
+
 .nav-item{
 	padding-right: .8rem;
 }
@@ -52,21 +54,38 @@ header{
 }
 .nav-link:hover{
 	transition: 0.3s;
-	color: red!important;
+	color: #00ffff!important;
 }
 span .fa-angle-down{
 	display: none;
 }
-
 .banner{
-	padding:50px 0;
+	padding:130px 0 100px;
+	background: #000	;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* style="background-image: url('images/banner-image.jpg'); */
+}
+.banner .banner_content{
+	text-align: center;
+}
+.banner .banner_content img{
+	width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 .banner p{
-	font-size: 30px;
+	font-size: 20px;
 	color: #fff;
 }
 .first-content{
-	padding: 100px 0;
+	padding: 50px 0;
+}
+.first-content h2{
+    font-size: 40px;
+    font-weight: bold;
 }
 /*.first-content h2{
 	margin-bottom: 50px;
@@ -100,11 +119,39 @@ span .fa-angle-down{
 	text-decoration: none;
 	transition: 0.3s;
 }*/
-.first-content .card-style{
-
-}
 .first-content .card{
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+	margin-bottom: 20px;
+}
 
+.first-content .card a{
+	color:#343a40;
+	font-size: 16px;
+}
+/* .first-content .card a:hover{
+	content: "\2192";
+	color: #00ffff;
+	text-decoration: none;
+} */
+.first-content .card a:after {
+	content: '\2794';
+	position: absolute;
+	opacity: 0;  	
+	bottom: 18px;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.first-content .card a:hover{
+	padding-right: 24px;
+	padding-left:8px;
+	color: #00ffff;
+	text-decoration: none;
+}
+
+.first-content .card a:hover:after {
+	opacity: 1;
+	right: 30px;
 }
 .first-content .card img{
  height: 180px;
@@ -140,14 +187,28 @@ span .fa-angle-down{
 	justify-content: space-between;
 }
 .second-content .language{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 100%;
-    overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .second-content .language > div{
 	text-align: center;
 	margin-bottom: 50px;
+	margin-right: 20px;
+}
+.second-content .language > div > div{
+	cursor: pointer;
+}
+.second-content .language > div > div:hover{
+	transform: translateY(-5%);
+	transition: 0.5s;
+	transition: ease-in-out 0.5s;
+}
+.second-content .language img:hover{
+	/* transform: translateY(-10%);
+	transition: 0.5s;
+	transition: ease-in-out 0.5s; */
 }
 .second-content .language > div:nth-child(8){
 	display: grid;
@@ -163,18 +224,28 @@ span .fa-angle-down{
 	margin-bottom: 0;
 	color: #fff;
 }
+
 .second-content .experience_details .ojt-work > div p:first-child{
 	margin-bottom: 0;
 }
 .third-content{
-	padding: 100px 0;
+	padding: 50px 0;
 }
-.experience {
+.third-content .experience {
     margin: 0 0 45px;
     padding: 0;
     position: relative;
 }
-.experience::before {
+,.third-content h2{
+	margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.center-h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+/* .third-content .experience::before {
     border-radius: .25rem;
     background: #dee2e6;
     bottom: 0;
@@ -184,25 +255,25 @@ span .fa-angle-down{
     position: absolute;
     top: 0;
     width: 4px;
+} */
+.third-content .experience>div{
+	margin-bottom:30px;
+	text-align: center;
 }
-.experience>div {
+.third-content .experience>div > div {
     margin-bottom: 15px;
     margin-right: 10px;
     position: relative;
 }
-.experience>.work>span {
+.third-content .experience>div>.work>span {
     border-radius: 4px;
     background-color: #fff;
     display: inline-block;
     font-weight: 600;
     padding: 5px;
 }
-.experience>div>.fa, 
-.experience>div>.fab, 
-.experience>div>.far, 
-.experience>div>.fas, 
-.experience>div>.glyphicon, 
-.experience>div>.ion {
+
+/* .third-content .experience>div> div > i {
     background: #adb5bd;
     border-radius: 50%;
     font-size: 15px;
@@ -213,33 +284,69 @@ span .fa-angle-down{
     text-align: center;
     top: 0;
     width: 30px;
-}
-.experience>div::after, 
-.experience>div::before {
+} */
+/* .third-content .experience>div::after, 
+.third-content .experience>div::before {
     content: "";
     display: table;
-}
-.mybg-violet {
-    background-color: #944dff !important;
+} */
+.third-content .color-gray{
+    background-color: #a9a9a9 !important;
     color: #fff;
 }
-.experience>div>.company_year {
+.third-content .company_year {
     box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
     border-radius: .25rem;
     background: #fff;
     color: #495057;
-    margin-left: 60px;
     margin-right: 15px;
     margin-top: 0;
     padding: 0;
     position: relative;
 }
-.experience>div>.company_year>.timeline-body, .experience>div>.company_year>.timeline-footer {
+.third-content .timeline-body {
     padding: 10px;
 }
+footer{
+	background:#343a40;
+	padding: 20px 0;
+}
+footer .copyright p{
+	color:#fff;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+footer .copy_media{
+	text-align: center;
+}
+footer .social-media{
 
 
+}
+footer .social-media img{
+	width: 30px;
+	height: auto;
+	border-radius: 50px;
+}
 @media (min-width: 768px){
+	.second-content .language{
+		display: flex;
+		flex-wrap: wrap;
+		/* grid-template-columns: 1fr 1fr 1fr 1fr;
+		height: 100%; */
+	}
+	.second-content .language > div{
+		padding:0 20px;
+	}
+	.third-content .experience>div{
+		text-align: left;
+	}
+	.third-content .experience>div>.work>span{
+		margin-left: 60px;
+	}
+	.third-content .company_year{
+		margin-left: 60px;
+	}
 /*	.nav-link {
 	    text-align: left;
 	    padding-left: 13px;
@@ -259,6 +366,13 @@ span .fa-angle-down{
 	.nav-item{
 		padding: 0;
 	}
+	.banner p{
+		font-size: 25px;
+		padding: 0 150px;
+	}
+	.first-content .card a{
+		font-size: 20px;
+	}
 /*	.nav-link{
 		text-align: left;
 		font-size: 20px;
@@ -266,6 +380,12 @@ span .fa-angle-down{
 	.nav-link:hover{
 		width: 100%;
 	}*/
+	.second-content .language > div{
+		padding: 0 60px;
+	}
+	.navbar-nav .nav-link{
+		padding-right: 25px!important;
+	}
 	span .fa-angle-down {
     	display: inline;
 	}
@@ -273,7 +393,6 @@ span .fa-angle-down{
 		padding-left: 5px;
 	}
 }
-
 @media (min-width: 1200px){
 	.sign img{
 		padding-left: 7px;
