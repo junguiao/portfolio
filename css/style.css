@@ -59,11 +59,17 @@ span .fa-angle-down{
 }
 .banner{
 	padding:150px 0 50px;
-	background: #000	;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background: #000;
 	/* style="background-image: url('images/banner-image.jpg'); */
+}
+#particles-js{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+canvas {
+    display: block;
+    vertical-align: bottom;
 }
 .banner .banner_content{
 	text-align: center;
@@ -77,6 +83,13 @@ span .fa-angle-down{
 .banner p{
 	font-size: 20px;
 	color: #fff;
+}
+.banner .gif{
+	text-align: center;
+}
+.banner .gif img{
+	width: 120px;
+    height: auto;	
 }
 .first-content{
 	padding: 50px 0;
