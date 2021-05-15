@@ -23,9 +23,7 @@ body{
 .navbar-nav .nav-link{
 	font-size: 20px;
 }
-header{
 
-}
 
 .navbar-toggler{
 	background: #fff;
@@ -60,7 +58,7 @@ span .fa-angle-down{
 	display: none;
 }
 .banner{
-	padding:130px 0 100px;
+	padding:150px 0 50px;
 	background: #000	;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -205,11 +203,6 @@ span .fa-angle-down{
 	transition: 0.5s;
 	transition: ease-in-out 0.5s;
 }
-.second-content .language img:hover{
-	/* transform: translateY(-10%);
-	transition: 0.5s;
-	transition: ease-in-out 0.5s; */
-}
 .second-content .language > div:nth-child(8){
 	display: grid;
     justify-content: center;
@@ -236,7 +229,7 @@ span .fa-angle-down{
     padding: 0;
     position: relative;
 }
-,.third-content h2{
+.third-content h2{
 	margin-bottom: 50px;
     font-size: 40px;
     font-weight: bold;
@@ -319,10 +312,7 @@ footer .copyright p{
 footer .copy_media{
 	text-align: center;
 }
-footer .social-media{
 
-
-}
 footer .social-media img{
 	width: 30px;
 	height: auto;
@@ -398,8 +388,6 @@ footer .social-media img{
 		padding-left: 7px;
 	}
 
-	.nav-item{
-	}
 /*	.nav-link{
 		width: auto;
 	}
