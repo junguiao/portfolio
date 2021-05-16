@@ -71,6 +71,8 @@ span .fa-angle-down{
 canvas {
     display: block;
     vertical-align: bottom;
+	width: auto!important;
+    height: auto!important;
 }
 .banner .banner_content{
 	text-align: center;
