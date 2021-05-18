@@ -22,12 +22,17 @@ body{
 }
 .navbar-nav .nav-link{
 	font-size: 20px;
+	text-align: left;
 }
 
 
-.navbar-toggler{
-	background: #fff;
+.navbar-light .navbar-toggler{
+	color: hsla(0,0%,100%,.5)!important;
+    border-color: hsla(0,0%,100%,.1)!important;
 }
+/* .navbar-light .navbar-toggler-icon{
+	
+} */
 
 .logo{
 	display: inline-flex;
@@ -59,7 +64,7 @@ span .fa-angle-down{
 	display: none;
 }
 .banner{
-	padding: 200px 0 100px;
+	padding: 150px 0 100px;
 	background:#000;
 	background-position: center;
 	background-repeat: no-repeat;
