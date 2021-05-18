@@ -50,7 +50,8 @@ body{
 	padding: 10px;
 	color:#fff!important;
 }
-.nav-link:hover{
+.nav-link:hover,
+.nav-link:active{
 	transition: 0.3s;
 	color: #00ffff!important;
 }
@@ -58,8 +59,12 @@ span .fa-angle-down{
 	display: none;
 }
 .banner{
-	padding:150px 0 75px;
-	background: #000;
+	padding: 200px 0 100px;
+	background:#000;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	opacity: .9;
 	/* style="background-image: url('images/banner-image.jpg'); */
 }
 #particles-js{
