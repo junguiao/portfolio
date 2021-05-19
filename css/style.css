@@ -204,7 +204,7 @@ canvas {
 	cursor: pointer;
 }
 .second-content .language > div > div:hover{
-	transform: translateY(-5%);
+	transform: scale(1.2);
 	transition: 0.5s;
 	transition: ease-in-out 0.5s;
 }
