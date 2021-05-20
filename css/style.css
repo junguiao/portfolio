@@ -72,16 +72,20 @@ span .fa-angle-down{
 	opacity: .9;
 	/* style="background-image: url('images/banner-image.jpg'); */
 }
+.bg-dark{
+	background: #343a40;
+}
 #particles-js{
 	position: absolute;
     width: 100%;
     height: 100%;
 	z-index:5;
 }
-canvas {
+/* canvas{
     display: block;
     vertical-align: bottom;
-}
+} */
+
 .banner .banner_content{
 	text-align: center;
 }
